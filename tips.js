@@ -16,7 +16,9 @@ let totalDue = foodcost + tax + tip;
 // console.log("Tip is "  + tip);
 // console.log("Food cost is " + foodcost + "and tax is");
 
+const first = "lee"
 console.log(`
+    My name is ${first}
     Food cost is $${foodcost} and tax is $${tax}
     Tip is $${tip}
     Total Due is $${totalDue}

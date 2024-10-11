@@ -48,7 +48,12 @@
         const operator = event.target.innerText.toLowerCase()
         const a = Number(numberA.value);
         const b = Number(numberB.value);
-        answer.value = calc(a,b,operator).toFixed(2);
+        if("divide" == operator){
+            answer.value = calc(a,b,operator).toFixed(2);
+        }else{
+            answer.value = calc(a,b,operator);
+
+        }
     }
     // const btnAdd = document.getElementById("btnAdd")
     btnAdd.addEventListener("click", onClick);

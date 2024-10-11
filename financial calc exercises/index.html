@@ -1,0 +1,54 @@
+<head>
+    <script src="./financialcalc.js"></script>
+</head>
+<body>
+    <fieldset>
+        <table>
+            <tr>
+                <td>
+                    Principle:
+                </td>
+                <td>
+                    <input type="number" id="numberP" value="200">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    InterestRate:
+                </td>
+                <td>
+                    <input type="number" id="numberR" value="4">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Years:
+                </td>
+                <td>
+                    <input type="number" id="numberN" value="12">
+                </td>
+            </tr>  
+            <tr>
+                <td>
+                    Payment Amount:
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="answer" type="text" readonly>
+                </td>
+            </tr>
+            <button id="calinterest">Calculate</button>
+        </table>
+    </fieldset>
+</body>
+<script>
+   function onClick (event){
+    const P = numberP.value;
+    const r = numberR.value;
+    const n = numberN.value;
+    const M = P * ((r * ((1 + r) ** n)) / (((1 + r) ** n) - 1));
+        answer.value = M.toFixed(2);
+   }
+   calinterest.addEventListener("click", onClick)
+</script>

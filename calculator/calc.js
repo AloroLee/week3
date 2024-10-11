@@ -4,7 +4,7 @@ function add(a,b){
     return a + b;
 }
 
-function substract(a,b){
+function subtract(a,b){
     return a - b;
 }
 
@@ -24,7 +24,7 @@ function calc(a, b, operation){
     if("add" == operation){
         result= add(a,b)
     }else if("subtract"==operation){
-        result= substract(a,b);
+        result= subtract(a,b);
     }else if("multiply"==operation){
         result= multiply(a,b);
     }else if("divide"==operation){

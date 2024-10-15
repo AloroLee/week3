@@ -43,12 +43,12 @@
     </fieldset>
 </body>
 <script>
-   function onClick (event){
+   function onClick (){
     const P = numberP.value;
     const r = numberR.value;
     const n = numberN.value;
     const M = P * ((r * ((1 + r) ** n)) / (((1 + r) ** n) - 1));
-        answer.value = M.toFixed(2);
+    answer.value = M.toFixed(2);
    }
    calinterest.addEventListener("click", onClick)
 </script>
